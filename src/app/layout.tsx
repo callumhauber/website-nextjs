@@ -28,18 +28,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={` ${atkinsonHyperlegible.variable} ${atkinsonHyperlegibleMono.variable} antialiased`}>
-        <nav className={`fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-6 py-3 shadow`}>
+        <nav
+          className={`fixed top-0 left-0 z-50 flex h-18 w-full items-center justify-between bg-gray-100 px-6 shadow`}
+        >
           <div className={`flex-1 text-left text-4xl font-bold tracking-wide text-lime-400`}>
-            suspiciously specific stickers
+            <span className="whitespace-nowrap">suspiciously specific stickers</span>
           </div>
           <div className={`flex flex-2 justify-center gap-8 text-base font-medium`}>
-            <a href="/gallery" className="hover:underline">
+            <a href="/gallery" className="text-lime-400 hover:underline">
               gallery
             </a>
-            <a href="/about" className="hover:underline">
+            <a href="/about" className="text-lime-400 hover:underline">
               about
             </a>
-            <a href="/contact" className="hover:underline">
+            <a href="/contact" className="text-lime-400 hover:underline">
               contact
             </a>
           </div>
