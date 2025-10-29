@@ -1,7 +1,7 @@
 import './globals.css';
 
 import type { Metadata } from 'next';
-import { Atkinson_Hyperlegible_Next, Atkinson_Hyperlegible_Mono } from 'next/font/google';
+import { Atkinson_Hyperlegible_Mono, Atkinson_Hyperlegible_Next } from 'next/font/google';
 
 const atkinsonHyperlegible = Atkinson_Hyperlegible_Next({
   variable: '--font-atkinson-hyperlegible',
@@ -27,12 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${atkinsonHyperlegible.variable} ${atkinsonHyperlegibleMono.variable} antialiased`}>
-        <nav className="bg-opacity-90 fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-6 py-3 shadow">
-          <div className="flex-1 text-left text-4xl font-bold tracking-wide text-lime-400">
+      <body className={` ${atkinsonHyperlegible.variable} ${atkinsonHyperlegibleMono.variable} antialiased`}>
+        <nav className={`fixed top-0 left-0 z-50 flex w-full items-center justify-between bg-white px-6 py-3 shadow`}>
+          <div className={`flex-1 text-left text-4xl font-bold tracking-wide text-lime-400`}>
             suspiciously specific stickers
           </div>
-          <div className="flex flex-2 justify-center gap-8 text-base font-medium">
+          <div className={`flex flex-2 justify-center gap-8 text-base font-medium`}>
             <a href="/gallery" className="hover:underline">
               gallery
             </a>

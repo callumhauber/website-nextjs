@@ -1,18 +1,15 @@
 import { defineConfig, globalIgnores } from 'eslint/config';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
-import jsxA11y from 'eslint-plugin-jsx-a11y';
-import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
+import simpleImportSort from 'eslint-plugin-simple-import-sort';
 
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  jsxA11y.flatConfigs.recommended,
   // Plugins section
   {
     plugins: {
-      'jsx-a11y': jsxA11y,
       'simple-import-sort': simpleImportSort,
       'better-tailwindcss': eslintPluginBetterTailwindcss,
     },
