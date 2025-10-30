@@ -5,5 +5,6 @@
     "source.fixAll.eslint": "explicit"
   },
   "eslint.validate": ["javascript", "typescript"],
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
