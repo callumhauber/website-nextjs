@@ -17,8 +17,8 @@ const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'SSStickers',
-  description: 'Suspiciously Specific Stickers',
+  title: 'ssstickers',
+  description: 'suspiciously specific stickers',
 };
 
 export default function RootLayout({
@@ -29,8 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${atkinsonHyperlegible.variable} ${atkinsonHyperlegibleMono.variable} antialiased`}>
-        <div className="flex h-dvh flex-col">
-          <nav className="z-50 flex h-12 w-full flex-shrink-0 items-center justify-between bg-gray-100 font-sans shadow">
+        <div className="flex h-dvh flex-col font-sans">
+          <nav className="z-50 flex h-12 w-full flex-shrink-0 items-center justify-between bg-gray-100 shadow">
             <div className="flex-1 text-left text-2xl text-lime-500">
               <NavItem className="text-nowrap" href="/">
                 <span className="sm:hidden">sss</span>

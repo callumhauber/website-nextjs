@@ -2,7 +2,7 @@ import { Section } from '@ui';
 
 export default function Page() {
   return (
-    <div className="flex w-full flex-col items-center justify-between bg-white px-4 py-8 font-sans">
+    <div className="flex w-full flex-col items-center justify-between bg-white px-4 py-8">
       <div className="max-w-3xl space-y-8">
         <Section title="why do we do this?" className="w-full">
           sometimes, we come up with a really, really stupid idea. and sometimes that idea comes up again enough times
