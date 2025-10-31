@@ -30,8 +30,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${atkinsonHyperlegible.variable} ${atkinsonHyperlegibleMono.variable} antialiased`}>
         <div className="flex h-dvh flex-col font-sans">
-          <nav className="z-50 flex h-12 w-full flex-shrink-0 items-center justify-between bg-gray-100 shadow">
-            <div className="flex-1 text-left text-2xl text-lime-500">
+          <nav className="z-50 flex h-12 w-full shrink-0 items-center justify-between bg-gray-100 shadow dark:bg-gray-800">
+            <div className="flex-1 text-left text-2xl text-lime-500 dark:text-lime-800">
               <NavItem className="text-nowrap" href="/">
                 <span className="sm:hidden">sss</span>
                 <span className="hidden sm:inline">suspiciously specific stickers</span>
@@ -44,7 +44,7 @@ export default function RootLayout({
             </div>
             <div className="flex-1"></div>
           </nav>
-          <main className="flex-1 overflow-x-hidden overflow-y-auto">{children}</main>
+          <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-50 dark:bg-gray-900">{children}</main>
         </div>
       </body>
     </html>
