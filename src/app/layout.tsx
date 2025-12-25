@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Atkinson_Hyperlegible_Mono, Atkinson_Hyperlegible_Next } from 'next/font/google';
 import { NavItem } from '@ui';
+import { CiApple } from 'react-icons/ci';
 
 const atkinsonHyperlegible = Atkinson_Hyperlegible_Next({
   variable: '--font-atkinson-hyperlegible',
@@ -17,8 +18,8 @@ const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'ssstickers',
-  description: 'suspiciously specific stickers',
+  title: "Pomme d'api",
+  description: 'Pottery gallery',
 };
 
 export default function RootLayout({
@@ -32,9 +33,11 @@ export default function RootLayout({
         <div className="flex h-dvh flex-col font-sans">
           <nav className="z-50 flex h-12 w-full shrink-0 items-center justify-between bg-gray-100 shadow dark:bg-gray-800">
             <div className="flex-1 text-left text-2xl text-lime-500 dark:text-lime-800">
-              <NavItem className="text-nowrap" href="/">
-                <span className="sm:hidden">sss</span>
-                <span className="hidden sm:inline">suspiciously specific stickers</span>
+              <NavItem className="p-0! text-nowrap" href="/">
+                <span className="flex items-center p-3 sm:hidden">
+                  <CiApple strokeWidth={1} />
+                </span>
+                <span className="hidden p-3 sm:inline">Pomme d'api</span>
               </NavItem>
             </div>
             <div className="flex flex-2 justify-center gap-1 text-base font-medium">

@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Testing Guidelines
+
+## Organize Tests Around Features
+- Organize tests around features rather than teams or technical layers
+
+## Test Types and Approaches
+- Feature Tests serve as the primary driver of development. Begin with a feature test that describes desired behavior.
+- Unit Tests act as helpers that validate specific internal implementations. They complement feature tests rather than drive them.
+- The distinctions between e2e, integration, and acceptance tests are often overcomplicated. Focus on feature tests and unit tests to deliver meaningful validation.
+
+## Test Readability and Structure
+- Tests should read like plain English, use a “given, when, then” approach
+- Test names must clearly articulate the feature or functionality under test. This enhances report readability and speeds up debugging when failures occur.
+- Each test should focus on a single feature or piece of functionality. Avoid bundling multiple actions (like create, edit, and delete) into one test to maintain clarity and allow for parallelization and caching.
+- While it’s acceptable to create helper functions to simplify repetitive tasks (e.g., `page.clickButton('edit')`), ensure these abstractions don’t obscure important setup or action details.
+- Validate core flows (e.g., login) once as a feature test. For subsequent tests, use mocks or fixtures to simulate an authenticated state rather than repeatedly testing the login process.
+- Treat tests as an integral part of your codebase. Write them with the same care and clarity as production code.
+- A well-structured test that clearly describes user behavior minimizes the need for artificial test IDs.
+
+## Folder structure
+- Place feature tests under a `tests/feature` folder
+- Place unit tests under a `tests/unit` folder
+
+## Environment & Execution Strategy
+- Feature tests should be capable of running against multiple configurations (e.g., mock servers, real servers, different environments like qa or production). 
+- Even if tests run against mocks, they remain valid as long as the feature behavior is correctly validated.

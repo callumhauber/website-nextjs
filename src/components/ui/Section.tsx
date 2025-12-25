@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { Divider } from '../Divider';
 
 const Section = ({ children, className = '', title }: { children: ReactNode; className?: string; title?: string }) => (
   <section
@@ -7,7 +8,7 @@ const Section = ({ children, className = '', title }: { children: ReactNode; cla
     {title && (
       <>
         <h2 className="text-xl font-bold">{title}</h2>
-        <hr className="h-1 rounded-sm border-none shadow-[0_0_2px_rgba(0,0,0,0.2)] dark:bg-gray-700" />
+        <Divider />
       </>
     )}
     {children}
