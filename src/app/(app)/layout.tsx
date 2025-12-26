@@ -9,12 +9,14 @@ const atkinsonHyperlegible = Atkinson_Hyperlegible_Next({
   variable: '--font-atkinson-hyperlegible',
   subsets: ['latin'],
   fallback: ['sans-serif', 'system-ui'],
+  adjustFontFallback: false,
 });
 
 const atkinsonHyperlegibleMono = Atkinson_Hyperlegible_Mono({
   variable: '--font-atkinson-hyperlegible-mono',
   subsets: ['latin'],
   fallback: ['monospace', 'ui-monospace'],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
