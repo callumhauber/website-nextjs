@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+
 import { Divider } from '../Divider';
 
 const Section = ({ children, className = '', title }: { children: ReactNode; className?: string; title?: string }) => (

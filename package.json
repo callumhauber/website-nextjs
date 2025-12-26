@@ -23,6 +23,8 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.3",
+    "@next/eslint-plugin-next": "^15.5.9",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24",
     "@types/react": "^19",
@@ -31,7 +33,11 @@
     "baseline-browser-mapping": "^2.9.11",
     "eslint": "^9",
     "eslint-config-next": "15.5.9",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-better-tailwindcss": "^3.8.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",

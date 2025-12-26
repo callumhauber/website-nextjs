@@ -1,5 +1,4 @@
 import { Card } from '@/components/card';
-import { Section } from '@/components/ui/Section';
 
 export default function Page() {
   return (

@@ -4,7 +4,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": ["javascript", "typescript"],
+  "eslint.useFlatConfig": true,
+  "eslint.workingDirectories": [ { "mode": "auto" } ],
   "prettier.singleQuote": true,
   "typescript.tsdk": "node_modules/typescript/lib"
 }

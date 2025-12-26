@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image, { type ImageProps } from 'next/image';
+import Link from 'next/link';
 import type { ComponentProps, ReactNode } from 'react';
 
 // --- Types ---
@@ -24,11 +24,15 @@ const CardRoot = ({ children, className = '', href }: CardProps) => (
 );
 
 const CardHeader = ({ children, className = '' }: BaseProps) => (
-  <div className={`mb-3 flex items-start justify-between gap-4 ${className}`}>{children}</div>
+  <div className={`mb-3 flex items-start justify-between gap-4 ${className}`}>
+    {children}
+  </div>
 );
 
 const CardTitle = ({ children, className = '' }: BaseProps) => (
-  <h3 className={`text-lg leading-tight font-bold text-slate-900 ${className}`}>{children}</h3>
+  <h3 className={`text-lg leading-tight font-bold text-slate-900 ${className}`}>
+    {children}
+  </h3>
 );
 
 const CardDetailGroup = ({ children, className = '' }: BaseProps) => (
@@ -44,8 +48,15 @@ const CardDetail = ({ children, className = '' }: BaseProps) => (
 );
 
 const CardImage = ({ className = '', alt, ...props }: ImageProps) => (
-  <div className={`relative mb-4 aspect-square w-full overflow-hidden rounded-xl bg-slate-200 ${className}`}>
-    <Image alt={alt} fill className="object-cover transition-transform duration-300 group-hover:scale-105" {...props} />
+  <div
+    className={`relative mb-4 aspect-square w-full overflow-hidden rounded-xl bg-slate-200 ${className}`}
+  >
+    <Image
+      alt={alt}
+      fill
+      className="object-cover transition-transform duration-300 group-hover:scale-105"
+      {...props}
+    />
   </div>
 );
 
@@ -57,7 +68,11 @@ const CardActionGroup = ({ children, className = '' }: BaseProps) => (
   <div className={`flex flex-wrap gap-2 ${className}`}>{children}</div>
 );
 
-const CardAction = ({ children, className = '', ...props }: ComponentProps<'div'>) => (
+const CardAction = ({
+  children,
+  className = '',
+  ...props
+}: ComponentProps<'div'>) => (
   <div
     className={`flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:bg-slate-50 hover:text-slate-900 ${className}`}
     {...props}
@@ -67,7 +82,11 @@ const CardAction = ({ children, className = '', ...props }: ComponentProps<'div'
 );
 
 const CardDescription = ({ children, className = '' }: BaseProps) => (
-  <p className={`text-sm leading-relaxed font-medium text-slate-900 ${className}`}>{children}</p>
+  <p
+    className={`text-sm leading-relaxed font-medium text-slate-900 ${className}`}
+  >
+    {children}
+  </p>
 );
 
 // --- Export ---
