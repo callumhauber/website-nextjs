@@ -41,9 +41,7 @@ export const Pottery: CollectionConfig = {
       type: 'upload',
       relationTo: 'media',
       required: true,
-      hasMany: true, // Allow multiple images? The card implies a preview, but a detail page might want more. Let's assume one main preview + gallery.
-      // Wait, the user mockup has one main image. Let's make it an array of images to support a full gallery, but maybe a dedicated "mainImage" field is better, or just use the first one.
-      // Let's stick to 'gallery' hasMany: true for now, we can pick the first as thumbnail.
+      hasMany: true,
     },
     {
       name: 'description',

@@ -23,7 +23,7 @@ const GalleryCards = async () => {
               <Card.Title>{item.title}</Card.Title>
               {item.details && Array.isArray(item.details) && (
                 <Card.DetailGroup>
-                  {item.details.slice(0, 2).map((detail: any, i: number) => (
+                  {item.details.slice(0, 2).map((detail, i) => (
                     <Card.Detail key={i}>{detail.value}</Card.Detail>
                   ))}
                 </Card.DetailGroup>
