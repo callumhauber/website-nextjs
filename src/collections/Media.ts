@@ -5,6 +5,25 @@ export const Media: CollectionConfig = {
   access: {
     read: () => true,
   },
+  upload: {
+    staticDir: 'media',
+    imageSizes: [
+      {
+        name: 'card',
+        width: 600,
+        height: 600,
+        position: 'centre',
+      },
+      {
+        name: 'thumbnail',
+        width: 300,
+        height: 300,
+        position: 'centre',
+      },
+    ],
+    adminThumbnail: 'thumbnail',
+    mimeTypes: ['image/*'],
+  },
   fields: [
     {
       name: 'alt',
@@ -12,5 +31,4 @@ export const Media: CollectionConfig = {
       required: true,
     },
   ],
-  upload: true,
 }
